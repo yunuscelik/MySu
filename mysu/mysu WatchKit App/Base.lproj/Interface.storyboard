@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="mysu_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" layout="vertical" id="EaM-hO-MpE">
+                            <items>
+                                <group width="0.29999999999999999" alignment="center" id="ekr-tp-hqg">
+                                    <items>
+                                        <button width="1" alignment="left" backgroundImage="calender_new" id="hzE-TB-RJa">
+                                            <connections>
+                                                <action selector="ScheduleButton" destination="AgC-eL-Hgc" id="S8G-7T-gKe"/>
+                                                <segue destination="OL9-ef-gdn" kind="push" id="zR6-Oy-clp"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="kdX-A9-gnV">
+                                    <items>
+                                        <group width="0.29999999999999999" alignment="left" verticalAlignment="center" id="cMz-Fy-6r0">
+                                            <items>
+                                                <button width="1" alignment="left" backgroundImage="meal" id="d2a-pK-g99">
+                                                    <connections>
+                                                        <action selector="MealButton" destination="AgC-eL-Hgc" id="9nB-pP-Si4"/>
+                                                        <segue destination="ydj-w0-gld" kind="push" id="cxU-Vf-O5l"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="0.40000000000000002" alignment="left" id="22W-lq-WHS">
+                                            <items>
+                                                <button width="1" alignment="left" backgroundImage="mysu" id="z2e-SD-KZW">
+                                                    <connections>
+                                                        <segue destination="i2f-Rn-xeh" kind="push" id="1cT-R4-y1k"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="0.29999999999999999" alignment="left" verticalAlignment="center" id="DbK-fR-rbZ">
+                                            <items>
+                                                <button width="1" alignment="left" backgroundImage="bus" id="00D-2h-goj">
+                                                    <connections>
+                                                        <action selector="ShuttleButton" destination="AgC-eL-Hgc" id="KBK-11-gL1"/>
+                                                        <segue destination="8t9-ti-keW" kind="push" id="BLv-0m-vGP"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="0.29999999999999999" alignment="center" id="Z8G-0V-GNb">
+                                    <items>
+                                        <button width="1" alignment="left" backgroundImage="card" id="W17-fx-Jmj">
+                                            <connections>
+                                                <segue destination="fRz-y2-0C5" kind="push" id="vP3-Tp-d39"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="354" y="-386"/>
+        </scene>
+        <!--Su Card Interface Controller-->
+        <scene sceneID="7o5-3a-6gZ">
+            <objects>
+                <controller id="fRz-y2-0C5" customClass="SuCardInterfaceController" customModule="mysu_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="SuCard" id="bfz-jL-KZn">
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <separator alignment="left" id="y5e-Rx-axe"/>
+                        <label alignment="center" text="Label" id="gRq-Cl-0Xr"/>
+                        <group width="1" height="0.80000000000000004" alignment="left" layout="vertical" id="OA6-Aa-8kb">
+                            <items>
+                                <group width="1" height="0.33000000000000002" alignment="left" id="If0-ti-Tc7">
+                                    <items>
+                                        <label alignment="left" verticalAlignment="center" text=" Meal" textAlignment="center" id="shu-Gk-17R"/>
+                                        <label alignment="right" verticalAlignment="center" text="Label" id="gdH-eT-7tH"/>
+                                    </items>
+                                    <color key="backgroundColor" red="0.89803921568627454" green="0.6438550873575043" blue="0.15879816007545558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </group>
+                                <group width="1" height="0.33000000000000002" alignment="left" id="jCd-so-L4B">
+                                    <items>
+                                        <label alignment="left" verticalAlignment="center" text=" Shuttle" id="7mk-J9-RQP"/>
+                                        <label alignment="right" verticalAlignment="center" text="Label" id="bua-KP-w6G"/>
+                                    </items>
+                                    <color key="backgroundColor" red="0.17147600990948972" green="0.67959037709092895" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </group>
+                                <group width="1" height="0.33000000000000002" alignment="left" id="2QM-2I-BFA">
+                                    <items>
+                                        <label alignment="left" verticalAlignment="center" text=" Print" id="73s-DM-f9h"/>
+                                        <label alignment="right" verticalAlignment="center" text="Label" id="pfV-R3-fo7"/>
+                                    </items>
+                                    <color key="backgroundColor" red="0.89803921568627454" green="0.075991077418644595" blue="0.59718478118689544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="MealTL" destination="gdH-eT-7tH" id="gJ3-rb-0GZ"/>
+                        <outlet property="PrintTL" destination="pfV-R3-fo7" id="YwU-DD-BKl"/>
+                        <outlet property="ShuttleTL" destination="bua-KP-w6G" id="6Rs-JA-veU"/>
+                        <outlet property="infoLabel" destination="gRq-Cl-0Xr" id="gsH-lz-bh5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-16" y="61"/>
+        </scene>
+        <!--MealInterfaceController-->
+        <scene sceneID="8kR-3h-3O7">
+            <objects>
+                <controller identifier="MealInterfaceController" id="ydj-w0-gld" customClass="MealInterfaceController" customModule="mysu_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="aJ4-EU-oiw">
+                            <items>
+                                <button height="1" alignment="left" verticalAlignment="center" title="&lt;" id="8ed-ya-up2">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <connections>
+                                        <action selector="PrevDay" destination="ydj-w0-gld" id="Bbb-CD-dkW"/>
+                                    </connections>
+                                </button>
+                                <label alignment="center" verticalAlignment="center" text="Today" textAlignment="left" id="rq3-Or-BNp">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <button height="1" alignment="right" verticalAlignment="center" title="&gt;" id="lOi-NE-Omx">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                </button>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="8Fg-RN-BeO"/>
+                        <label alignment="center" text="Label" id="s1d-0l-ncr"/>
+                        <table alignment="left" id="V8k-uQ-Rj1">
+                            <items>
+                                <tableRow identifier="MealRowController" id="yAF-mW-RJ0" customClass="MealRowController" customModule="mysu_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="ecy-KI-BYj">
+                                        <items>
+                                            <label alignment="left" text="Label" textAlignment="left" numberOfLines="4" id="b5o-8F-P5g"/>
+                                            <group width="1" alignment="left" id="ImC-vV-DU3">
+                                                <items>
+                                                    <label alignment="left" id="3Xp-ZA-nv8">
+                                                        <color key="textColor" red="0.0" green="0.28409014148145317" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="font" type="system" weight="light" pointSize="12"/>
+                                                    </label>
+                                                    <label alignment="right" id="7HR-DC-0Qp">
+                                                        <color key="textColor" red="1" green="0.048309613321361855" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="Calorie" destination="7HR-DC-0Qp" id="aGG-r4-ZPH"/>
+                                        <outlet property="MealName" destination="b5o-8F-P5g" id="UD2-lN-Vpg"/>
+                                        <outlet property="Time" destination="3Xp-ZA-nv8" id="P5i-fP-pBs"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <gestureRecognizers>
+                                <swipeGestureRecognizer id="nv3-Oq-Emv">
+                                    <connections>
+                                        <action selector="rigthSwipe:" destination="ydj-w0-gld" id="6h9-De-Tob"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer direction="2" id="vag-wi-4Fi">
+                                    <connections>
+                                        <action selector="leftSwipe:" destination="ydj-w0-gld" id="q7E-aM-Xf0"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                            </gestureRecognizers>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="DayTitle" destination="rq3-Or-BNp" id="NyG-KZ-PvW"/>
+                        <outlet property="MealTable" destination="V8k-uQ-Rj1" id="Ib6-mg-j7b"/>
+                        <outlet property="infoLabel" destination="s1d-0l-ncr" id="4Rb-D8-wdT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="243" y="54"/>
+        </scene>
+        <!--CourseInterface-->
+        <scene sceneID="cdQ-44-Cwh">
+            <objects>
+                <controller identifier="CourseInterface" id="OL9-ef-gdn" customClass="CourseInterfaceController" customModule="mysu_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="8K7-pN-LTS">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Monday" id="G8Q-92-g12">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <button height="1" alignment="left" title="&lt;" id="UEf-fa-cCK">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <connections>
+                                        <action selector="prevButton" destination="OL9-ef-gdn" id="5ax-gL-2H4"/>
+                                    </connections>
+                                </button>
+                                <button height="1" alignment="right" title="&gt;" id="1O9-gI-O2q">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <connections>
+                                        <action selector="nextButton" destination="OL9-ef-gdn" id="Ou5-5k-DJa"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="pNt-BD-R4Y"/>
+                        <label alignment="center" text="Label" id="erZ-z5-e83"/>
+                        <table alignment="left" id="NpG-Lb-AEy">
+                            <items>
+                                <tableRow identifier="CourseRowController" id="qS9-Ow-ZqE" customClass="CourseRowController" customModule="mysu_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" animationDuration="1" layout="vertical" id="OAo-gI-WNQ">
+                                        <items>
+                                            <label alignment="left" text="Label" numberOfLines="3" id="FNT-IV-PTd"/>
+                                            <separator alignment="left" alpha="0.45000000000000001" id="1f0-lP-cCj">
+                                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                                            </separator>
+                                            <group width="1" alignment="left" id="u8L-nK-8Nq">
+                                                <items>
+                                                    <label alignment="left" id="StJ-vv-IYU"/>
+                                                    <label alignment="right" id="t5v-Gq-ohv"/>
+                                                </items>
+                                            </group>
+                                            <group width="1" alignment="left" id="vKI-aT-1C8">
+                                                <items>
+                                                    <label alignment="left" id="OaM-DQ-ogv"/>
+                                                    <label alignment="right" id="jHd-sf-sCD"/>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="building" destination="t5v-Gq-ohv" id="bIY-BN-dmP"/>
+                                        <outlet property="course" destination="FNT-IV-PTd" id="fiU-7y-3Ri"/>
+                                        <outlet property="courseGroup" destination="OAo-gI-WNQ" id="lW0-pV-KEc"/>
+                                        <outlet property="endTime" destination="OaM-DQ-ogv" id="GdR-hN-EoC"/>
+                                        <outlet property="time" destination="StJ-vv-IYU" id="KrM-AI-tSC"/>
+                                        <outlet property="venue" destination="jHd-sf-sCD" id="jSk-TM-4X3"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <gestureRecognizers>
+                                <swipeGestureRecognizer direction="2" id="Mgp-zR-RNS">
+                                    <connections>
+                                        <action selector="swiped_left:" destination="OL9-ef-gdn" id="6ZD-r0-PiR"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer id="vKP-eg-HKc">
+                                    <connections>
+                                        <action selector="swiped_rigth:" destination="OL9-ef-gdn" id="Z7v-mY-k51"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                            </gestureRecognizers>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="CourseTable" destination="NpG-Lb-AEy" id="whr-rM-Uma"/>
+                        <outlet property="Label" destination="G8Q-92-g12" id="u1P-cL-iKH"/>
+                        <outlet property="infoLabel" destination="erZ-z5-e83" id="wvG-bB-oeJ"/>
+                        <outlet property="prbtn" destination="1O9-gI-O2q" id="e5W-m2-lLe"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="487" y="54"/>
+        </scene>
+        <!--Shuttle Interface Controller-->
+        <scene sceneID="4bH-Gy-BiX">
+            <objects>
+                <controller id="8t9-ti-keW" customClass="ShuttleInterfaceController" customModule="mysu_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Label" id="TFq-xl-ww6">
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <separator alignment="left" id="Yea-Pt-K8g"/>
+                        <label alignment="center" text="Loading Data" id="3t5-ag-Abw"/>
+                        <table alignment="left" id="pCm-3O-sUX">
+                            <items>
+                                <tableRow identifier="ShuttleRowController" id="iRm-Ed-g8s" customClass="ShuttleRowController" customModule="mysu_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="ukn-FF-OGv">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="6Sb-XB-Roj"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.085494750844768652" green="0.19810888269952795" blue="0.58155247917030062" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="RouteName" destination="6Sb-XB-Roj" id="6Tv-jI-W4u"/>
+                                        <outlet property="routeGroup" destination="ukn-FF-OGv" id="kuY-3G-pfT"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="Noresult" destination="3t5-ag-Abw" id="gvl-3R-8d7"/>
+                        <outlet property="ShuttleRoutesTitle" destination="TFq-xl-ww6" id="DBe-QZ-bhy"/>
+                        <outlet property="ShuttleTable" destination="pCm-3O-sUX" id="o3z-WB-Izv"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="775" y="-386"/>
+        </scene>
+        <!--ShuttleDaysInterfaceController-->
+        <scene sceneID="05z-Qc-kZn">
+            <objects>
+                <controller identifier="ShuttleDaysInterfaceController" id="d4q-Hx-otc" customClass="ShuttleDaysInterfaceController" customModule="mysu_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Label" id="LCe-el-fvX">
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <separator alignment="left" id="xve-uT-WzE"/>
+                        <table alignment="left" id="ptH-G2-PsZ">
+                            <items>
+                                <tableRow identifier="ShuttleDayRowController" id="JcL-Y2-z9P" customClass="ShuttleDayRowController" customModule="mysu_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="hgk-Hs-SMw">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="2iv-XT-CnT"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.072478782443779685" green="0.17567573568816472" blue="0.58155247917030062" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="DayLabel" destination="2iv-XT-CnT" id="Zge-nA-mgP"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="DayTable" destination="ptH-G2-PsZ" id="uH8-ru-cyd"/>
+                        <outlet property="label" destination="LCe-el-fvX" id="Klq-L5-Wjk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="775" y="-56"/>
+        </scene>
+        <!--ShuttleHourInterfaceController-->
+        <scene sceneID="sw1-Ld-NeZ">
+            <objects>
+                <controller identifier="ShuttleHourInterfaceController" id="MaC-Pc-MAn" customClass="ShuttleHourInterfaceController" customModule="mysu_WatchKit_Extension">
+                    <items>
+                        <button width="0.80000000000000004" widthAdjustment="0.69999999999999996" height="0.20000000000000001" alignment="center" id="mnm-jK-glb">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="Change" destination="MaC-Pc-MAn" id="b93-Lj-H6C"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="J4A-cf-eSV"/>
+                        <table alignment="left" id="pYR-Pr-GvB">
+                            <items>
+                                <tableRow identifier="ShuttleHourRowController" id="faV-rq-8Gf" customClass="ShuttleHourRowController" customModule="mysu_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="8VF-VA-xTp">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" id="FIi-jp-2aa"/>
+                                            <label alignment="right" verticalAlignment="center" id="J6k-o0-Mhf"/>
+                                        </items>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="Hour" destination="FIi-jp-2aa" id="SDW-jC-ff4"/>
+                                        <outlet property="Hour2" destination="J6k-o0-Mhf" id="5Ro-KT-ZHj"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="ChangeButton" destination="mnm-jK-glb" id="fwh-gv-vMl"/>
+                        <outlet property="HourTable" destination="pYR-Pr-GvB" id="hC3-FV-AOg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="775" y="271"/>
+        </scene>
+        <!--SettingsInterfaceController-->
+        <scene sceneID="DGT-ec-UhK">
+            <objects>
+                <controller identifier="SettingsInterfaceController" id="i2f-Rn-xeh" customClass="SettingsInterfaceController" customModule="mysu_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Label" textAlignment="center" id="kh4-I2-qZB">
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <separator alignment="left" id="037-gZ-tap"/>
+                        <group width="1" alignment="left" id="aeI-1t-n0q">
+                            <items>
+                                <label alignment="left" text="Language" id="q2t-gY-bPc"/>
+                                <button height="1" alignment="right" title="TR" id="S0T-Jo-qJm">
+                                    <connections>
+                                        <action selector="TRAction" destination="i2f-Rn-xeh" id="Ttu-eX-S2K"/>
+                                    </connections>
+                                </button>
+                                <separator alignment="right" id="nty-us-ACX"/>
+                                <button height="1" alignment="right" title="EN" id="5o3-ch-EYG">
+                                    <connections>
+                                        <action selector="ENAction" destination="i2f-Rn-xeh" id="6Vn-1d-wF7"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <separator width="1" alignment="left" id="gHh-8l-cza"/>
+                        <label alignment="left" text="Label" numberOfLines="20" id="MCC-p5-4g9"/>
+                        <button width="1" alignment="left" title="Clear" id="E7f-iQ-eGs">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="button" destination="i2f-Rn-xeh" id="B4X-cs-yTf"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="ENButton" destination="5o3-ch-EYG" id="k1J-3J-hBe"/>
+                        <outlet property="TRButton" destination="S0T-Jo-qJm" id="29F-dt-tAr"/>
+                        <outlet property="clearButton" destination="E7f-iQ-eGs" id="3iE-4K-jOI"/>
+                        <outlet property="info" destination="MCC-p5-4g9" id="KAJ-7N-SAl"/>
+                        <outlet property="setting" destination="kh4-I2-qZB" id="mSg-06-sG1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-294" y="60"/>
+        </scene>
+    </scenes>
+</document>
